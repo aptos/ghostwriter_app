@@ -1,20 +1,35 @@
-development:
+#development:
+#  host: localhost
+#  database: ghostwriter_development
+#
+#test:
+#  host: localhost
+#  database: ghostwriter_test
+#
+## set these environment variables on your prod server
+#production:
+#  host: <%= ENV['MONGOID_HOST'] %>
+#  port: <%= ENV['MONGOID_PORT'] %>
+#  username: <%= ENV['MONGOID_USERNAME'] %>
+#  password: <%= ENV['MONGOID_PASSWORD'] %>
+#  database: <%= ENV['MONGOID_DATABASE'] %>
+#  # slaves:
+#  #   - host: slave1.local
+#  #     port: 27018
+#  #   - host: slave2.local
+#  #     port: 27019
+
+defaults: &defaults
   host: localhost
-  database: ghostwriter_development
+
+development:
+  <<: *defaults
+  database: development
 
 test:
-  host: localhost
-  database: ghostwriter_test
+  <<: *defaults
+  database: test
 
-# set these environment variables on your prod server
+# MONGOHQ_URL configured when mongoid add on added
 production:
-  host: <%= ENV['MONGOID_HOST'] %>
-  port: <%= ENV['MONGOID_PORT'] %>
-  username: <%= ENV['MONGOID_USERNAME'] %>
-  password: <%= ENV['MONGOID_PASSWORD'] %>
-  database: <%= ENV['MONGOID_DATABASE'] %>
-  # slaves:
-  #   - host: slave1.local
-  #     port: 27018
-  #   - host: slave2.local
-  #     port: 27019
+  uri: <%= ENV['MONGOHQ_URL'] %>
