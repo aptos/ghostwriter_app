@@ -1,0 +1,1260 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-20 18:39:42 -0700
+Served asset /rails.png - 200 OK (4ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-24 20:28:09 -0700
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-06-24 20:28:26 -0700
+
+
+Started GET "/auth/twitter/callback?oauth_token=qvp75upVrtnMCAFBPqDZarHG2ikGFnHasCI6lZHF8&oauth_verifier=tROIB1xUZlbEbbX3RJ88nR2i07p6Yd9DN559Wc4" for 127.0.0.1 at 2012-06-24 20:28:27 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"qvp75upVrtnMCAFBPqDZarHG2ikGFnHasCI6lZHF8", "oauth_verifier"=>"tROIB1xUZlbEbbX3RJ88nR2i07p6Yd9DN559Wc4", "provider"=>"twitter"}
+Completed 500 Internal Server Error in 9ms
+
+RuntimeError (--- !map:OmniAuth::AuthHash 
+provider: twitter
+uid: "552159647"
+info: !map:OmniAuth::AuthHash::InfoHash 
+  nickname: aptos_brian
+  name: brian
+  location: 
+  image: http://a0.twimg.com/sticky/default_profile_images/default_profile_4_normal.png
+  description: 
+  urls: !map:Hashie::Mash 
+    Website: 
+    Twitter: http://twitter.com/aptos_brian
+credentials: !map:Hashie::Mash 
+  token: 552159647-V7zQJmtn5mAItYNl2R2hljorqV6U052MEy3cxQrZ
+  secret: ku0ygqnPun2XgiHBH75iq0PSdJLx6A9tT0a4Z33rrk
+extra: !map:Hashie::Mash 
+  access_token: !ruby/object:OAuth::AccessToken 
+    consumer: !ruby/object:OAuth::Consumer 
+      http: !ruby/object:Net::HTTP 
+        address: api.twitter.com
+        ca_file: 
+        ca_path: 
+        cert: 
+        cert_store: 
+        ciphers: 
+        close_on_empty_response: false
+        compression: 
+        curr_http_version: "1.1"
+        debug_output: 
+        enable_post_connection_check: true
+        key: 
+        newimpl: true
+        no_keepalive_server: false
+        open_timeout: 30
+        port: 443
+        read_timeout: 30
+        socket: 
+        ssl_context: !ruby/object:OpenSSL::SSL::SSLContext 
+          ca_file: 
+          ca_path: 
+          cert: 
+          cert_store: 
+          client_ca: 
+          client_cert_cb: 
+          extra_chain_cert: 
+          key: 
+          options: 4095
+          servername_cb: 
+          session_get_cb: 
+          session_id_context: 
+          session_new_cb: 
+          session_remove_cb: 
+          timeout: 
+          tmp_dh_callback: 
+          verify_callback: 
+          verify_depth: 
+          verify_mode: 0
+        ssl_timeout: 
+        ssl_version: 
+        sspi_enabled: false
+        started: false
+        use_ssl: true
+        verify_callback: 
+        verify_depth: 
+        verify_mode: 0
+      http_method: :post
+      key: xU4fJEcjWb2Ht4SvC0ei8A
+      options: 
+        :signature_method: HMAC-SHA1
+        :request_token_path: /oauth/request_token
+        :authorize_path: /oauth/authenticate
+        :access_token_path: /oauth/access_token
+        :proxy: 
+        :scheme: :header
+        :http_method: :post
+        :oauth_version: "1.0"
+        :site: https://api.twitter.com
+      secret: jauSJr9hH0ICtBbGrePGjDG7oAeZKOPH1aUw2oyWhU
+      uri: !ruby/object:URI::HTTPS 
+        fragment: 
+        host: api.twitter.com
+        opaque: 
+        parser: 
+        password: 
+        path: ""
+        port: 443
+        query: 
+        registry: 
+        scheme: https
+        user: 
+    params: 
+      :oauth_token: 552159647-V7zQJmtn5mAItYNl2R2hljorqV6U052MEy3cxQrZ
+      oauth_token: 552159647-V7zQJmtn5mAItYNl2R2hljorqV6U052MEy3cxQrZ
+      :oauth_token_secret: ku0ygqnPun2XgiHBH75iq0PSdJLx6A9tT0a4Z33rrk
+      oauth_token_secret: ku0ygqnPun2XgiHBH75iq0PSdJLx6A9tT0a4Z33rrk
+      :user_id: "552159647"
+      user_id: "552159647"
+      :screen_name: aptos_brian
+      screen_name: aptos_brian
+    response: !ruby/object:Net::HTTPOK 
+      body: "{\"show_all_inline_media\":false,\"id\":552159647,\"profile_background_image_url_https\":\"https:\\/\\/si0.twimg.com\\/images\\/themes\\/theme1\\/bg.png\",\"verified\":false,\"profile_sidebar_border_color\":\"C0DEED\",\"default_profile_image\":true,\"favourites_count\":0,\"profile_background_tile\":false,\"following\":false,\"location\":null,\"profile_sidebar_fill_color\":\"DDEEF6\",\"time_zone\":null,\"utc_offset\":null,\"screen_name\":\"aptos_brian\",\"name\":\"brian\",\"protected\":false,\"follow_request_sent\":false,\"profile_background_color\":\"C0DEED\",\"statuses_count\":1,\"default_profile\":true,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a0.twimg.com\\/images\\/themes\\/theme1\\/bg.png\",\"description\":null,\"profile_link_color\":\"0084B4\",\"listed_count\":0,\"friends_count\":16,\"lang\":\"en\",\"contributors_enabled\":false,\"profile_use_background_image\":true,\"geo_enabled\":false,\"profile_image_url\":\"http:\\/\\/a0.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png\",\"profile_text_color\":\"333333\",\"url\":null,\"id_str\":\"552159647\",\"status\":{\"in_reply_to_status_id_str\":null,\"coordinates\":null,\"geo\":null,\"truncated\":false,\"in_reply_to_user_id_str\":null,\"in_reply_to_user_id\":null,\"id_str\":\"212315929655259137\",\"retweeted\":false,\"in_reply_to_screen_name\":null,\"contributors\":null,\"possibly_sensitive_editable\":true,\"retweet_count\":0,\"favorited\":false,\"source\":\"\\u003Ca href=\\\"http:\\/\\/twitter.com\\/tweetbutton\\\" rel=\\\"nofollow\\\"\\u003ETweet Button\\u003C\\/a\\u003E\",\"created_at\":\"Mon Jun 11 22:50:36 +0000 2012\",\"possibly_sensitive\":false,\"place\":null,\"in_reply_to_status_id\":null,\"id\":212315929655259137,\"text\":\"I just load tested my web app with @blitz_io: http:\\/\\/t.co\\/bBTnYGHk\"},\"is_translator\":false,\"created_at\":\"Thu Apr 12 20:51:35 +0000 2012\",\"followers_count\":3,\"profile_image_url_https\":\"https:\\/\\/si0.twimg.com\\/sticky\\/default_profile_images\\/default_profile_4_normal.png\"}"
+      body_exist: true
+      code: "200"
+      header: 
+        date: 
+        - Mon, 25 Jun 2012 03:28:28 GMT
+        status: 
+        - 200 OK
+        x-mid: 
+        - d1d33f3c71e23245b4784252d065e4911131584f
+        pragma: 
+        - no-cache
+        x-ratelimit-limit: 
+        - "350"
+        x-ratelimit-remaining: 
+        - "349"
+        content-length: 
+        - "1865"
+        etag: 
+        - "\"68f0fb9ec5044fa7361670f307790428\""
+        x-frame-options: 
+        - SAMEORIGIN
+        cache-control: 
+        - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+        x-transaction: 
+        - 6137fdc65bfc36cc
+        content-type: 
+        - application/json; charset=utf-8
+        last-modified: 
+        - Mon, 25 Jun 2012 03:28:28 GMT
+        x-ratelimit-class: 
+        - api_identified
+        x-ratelimit-reset: 
+        - "1340598508"
+        x-runtime: 
+        - "0.03506"
+        x-transaction-mask: 
+        - a6183ffa5f8ca943ff1b53b5644ef114df9d6bba
+        x-access-level: 
+        - read
+        expires: 
+        - Tue, 31 Mar 1981 05:00:00 GMT
+        set-cookie: 
+        - k=10.35.38.136.1340594908343491; path=/; expires=Mon, 02-Jul-12 03:28:28 GMT; domain=.twitter.com
+        - guest_id=v1%3A134059490834780238; domain=.twitter.com; path=/; expires=Wed, 25-Jun-2014 15:28:28 GMT
+        - dnt=; domain=.twitter.com; path=/; expires=Thu, 01-Jan-1970 00:00:00 GMT
+        - lang=en; path=/
+        - twid=u%3D552159647%7CgtIKA9RM8xOvsAwquE0JuL1gLu4%3D; domain=.twitter.com; path=/; secure
+        - _twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCMnsriE4AToMY3NyZl9p%250AZCIlZmM2ZjVjMmMyYWFjM2JmNzYzYTRkZTI0ZjA0N2UxMDg6B2lkIiUwNTYz%250AYjJlYzc1YzNlNjBjZDg1ZmM1Yzc2NzYxODYyMg%253D%253D--5e5c9717d8be2e6428576a6f0b5aca0667c17e38; domain=.twitter.com; path=/; HttpOnly
+        vary: 
+        - Accept-Encoding
+        server: 
+        - tfe
+      http_version: "1.1"
+      message: OK
+      read: true
+      socket: 
+    secret: ku0ygqnPun2XgiHBH75iq0PSdJLx6A9tT0a4Z33rrk
+    token: 552159647-V7zQJmtn5mAItYNl2R2hljorqV6U052MEy3cxQrZ
+  raw_info: !map:Hashie::Mash 
+    show_all_inline_media: false
+    id: 552159647
+    profile_background_image_url_https: https://si0.twimg.com/images/themes/theme1/bg.png
+    verified: false
+    profile_sidebar_border_color: C0DEED
+    default_profile_image: true
+    favourites_count: 0
+    profile_background_tile: false
+    following: false
+    location: 
+    profile_sidebar_fill_color: DDEEF6
+    time_zone: 
+    utc_offset: 
+    screen_name: aptos_brian
+    name: brian
+    protected: false
+    follow_request_sent: false
+    profile_background_color: C0DEED
+    statuses_count: 1
+    default_profile: true
+    notifications: false
+    profile_background_image_url: http://a0.twimg.com/images/themes/theme1/bg.png
+    description: 
+    profile_link_color: 0084B4
+    listed_count: 0
+    friends_count: 16
+    lang: en
+    contributors_enabled: false
+    profile_use_background_image: true
+    geo_enabled: false
+    profile_image_url: http://a0.twimg.com/sticky/default_profile_images/default_profile_4_normal.png
+    profile_text_color: "333333"
+    url: 
+    id_str: "552159647"
+    status: !map:Hashie::Mash 
+      in_reply_to_status_id_str: 
+      coordinates: 
+      geo: 
+      truncated: false
+      in_reply_to_user_id_str: 
+      in_reply_to_user_id: 
+      id_str: "212315929655259137"
+      retweeted: false
+      in_reply_to_screen_name: 
+      contributors: 
+      possibly_sensitive_editable: true
+      retweet_count: 0
+      favorited: false
+      source: <a href="http://twitter.com/tweetbutton" rel="nofollow">Tweet Button</a>
+      created_at: Mon Jun 11 22:50:36 +0000 2012
+      possibly_sensitive: false
+      place: 
+      in_reply_to_status_id: 
+      id: 212315929655259137
+      text: "I just load tested my web app with @blitz_io: http://t.co/bBTnYGHk"
+    is_translator: false
+    created_at: Thu Apr 12 20:51:35 +0000 2012
+    followers_count: 3
+    profile_image_url_https: https://si0.twimg.com/sticky/default_profile_images/default_profile_4_normal.png
+):
+  app/controllers/sessions_controller.rb:3:in `create'
+
+Rendered /Users/brianwilkerson/.bundler/gems/actionpack-3.1.1.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/brianwilkerson/.bundler/gems/actionpack-3.1.1.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/brianwilkerson/.bundler/gems/actionpack-3.1.1.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.9ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-24 20:36:22 -0700
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 20:36:24 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (18.1ms)
+Compiled application.css  (1ms)  (pid 47812)
+Compiled home.css  (44ms)  (pid 47812)
+Compiled sessions.css  (1ms)  (pid 47812)
+Compiled application.js  (27ms)  (pid 47812)
+Compiled jquery.js  (26ms)  (pid 47812)
+Compiled jquery_ujs.js  (0ms)  (pid 47812)
+Compiled home.js  (424ms)  (pid 47812)
+Compiled sessions.js  (158ms)  (pid 47812)
+Completed 200 OK in 957ms (Views: 956.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 20:36:25 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-24 20:36:25 -0700
+Served asset /sessions.css - 200 OK (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 20:36:25 -0700
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 20:36:25 -0700
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 20:36:25 -0700
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 20:36:25 -0700
+Served asset /sessions.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-24 20:36:25 -0700
+Served asset /home.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-24 20:36:25 -0700
+Served asset /application.js - 200 OK (0ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 20:38:20 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (882ms) ghostwriter_development['$cmd'].find({:create=>"users"}).limit(-1)
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (904.3ms)
+Completed 200 OK in 1031ms (Views: 987.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 20:38:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-24 20:38:21 -0700
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-24 20:38:21 -0700
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-24 20:38:21 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 20:38:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 20:38:21 -0700
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 20:38:21 -0700
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 20:38:21 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-06-24 20:38:59 -0700
+
+
+Started GET "/auth/twitter/callback?oauth_token=CwNZkjtSpWgGcX03TpuuaPJgDZGNkIfadRGIbWvEE&oauth_verifier=KXPTEBROImoZSqd9HtpcrL94JkxlkVhUsooQi2OC6no" for 127.0.0.1 at 2012-06-24 20:38:59 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"CwNZkjtSpWgGcX03TpuuaPJgDZGNkIfadRGIbWvEE", "oauth_verifier"=>"KXPTEBROImoZSqd9HtpcrL94JkxlkVhUsooQi2OC6no", "provider"=>"twitter"}
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({:provider=>"twitter", :uid=>"552159647"}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) ghostwriter_development['users'].insert([{"_id"=>BSON::ObjectId('4fe7dd55d34a9cbae1000001'), "provider"=>"twitter", "uid"=>"552159647", "name"=>"brian", "email"=>""}])
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 20:39:01 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 10.1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-24 20:39:01 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 20:39:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 20:39:01 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-24 20:39:01 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 20:39:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 20:39:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 20:39:01 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-24 20:39:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 20:40:14 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 10.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-24 20:40:14 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-24 20:40:14 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 20:40:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 20:40:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 20:40:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 20:40:14 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 20:40:15 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-24 20:40:15 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 20:46:37 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (20.8ms)
+Compiled application.css  (13ms)  (pid 47907)
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+Rendered shared/_navigation.html.erb (2.4ms)
+Completed 200 OK in 210ms (Views: 174.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 20:46:37 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:38 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:38 -0700
+Served asset /home.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:38 -0700
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:38 -0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2012-06-24 20:46:41 -0700
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 20:46:41 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Rendered shared/_navigation.html.erb (0.6ms)
+Completed 200 OK in 26ms (Views: 12.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:41 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:41 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-06-24 20:46:43 -0700
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-06-24 20:46:43 -0700
+
+
+Started GET "/auth/twitter/callback?oauth_token=7kqjaeTYVawnRsqSvU8lVtmUBGRzy3eTAkXiy5aB2EU&oauth_verifier=Cvnhm09DVNvuZHLniEF5UtcisdovdAuyamz3wPU" for 127.0.0.1 at 2012-06-24 20:46:44 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"7kqjaeTYVawnRsqSvU8lVtmUBGRzy3eTAkXiy5aB2EU", "oauth_verifier"=>"Cvnhm09DVNvuZHLniEF5UtcisdovdAuyamz3wPU", "provider"=>"twitter"}
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({:provider=>"twitter", :uid=>"552159647"}).limit(-1).sort([[:_id, :asc]])
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 20:46:45 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (1.5ms)
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+Rendered shared/_navigation.html.erb (1.4ms)
+Completed 200 OK in 72ms (Views: 11.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:45 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:45 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:45 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:45 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2012-06-24 20:46:48 -0700
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 20:46:48 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Rendered shared/_navigation.html.erb (0.7ms)
+Completed 200 OK in 25ms (Views: 11.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:48 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:48 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-06-24 20:46:50 -0700
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-06-24 20:46:50 -0700
+
+
+Started GET "/auth/twitter/callback?oauth_token=SHDSNlzh0EMcco3yteBVrweCEsLNSqAzQDkFJiD0o&oauth_verifier=A7xojUKfpUWv7ENbIhbBKhGwXQ10EeFVgCJEIFrXZg" for 127.0.0.1 at 2012-06-24 20:46:50 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"SHDSNlzh0EMcco3yteBVrweCEsLNSqAzQDkFJiD0o", "oauth_verifier"=>"A7xojUKfpUWv7ENbIhbBKhGwXQ10EeFVgCJEIFrXZg", "provider"=>"twitter"}
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({:provider=>"twitter", :uid=>"552159647"}).limit(-1).sort([[:_id, :asc]])
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 20:46:51 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (1.6ms)
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+Rendered shared/_navigation.html.erb (1.5ms)
+Completed 200 OK in 24ms (Views: 11.6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:51 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:51 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 20:46:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 21:35:35 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (22.3ms)
+Compiled application.js  (6ms)  (pid 48279)
+Compiled users.js  (178ms)  (pid 48279)
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+Rendered shared/_navigation.html.erb (2.8ms)
+Completed 200 OK in 375ms (Views: 332.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:35 -0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:35 -0700
+Served asset /users.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:35 -0700
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:35 -0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 21:35:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:35 -0700
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/users/4fe7dd55d34a9cbae1000001" for 127.0.0.1 at 2012-06-24 21:35:38 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4fe7dd55d34a9cbae1000001"}
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+Rendered users/show.html.erb within layouts/application (0.5ms)
+Rendered shared/_navigation.html.erb (0.6ms)
+Completed 200 OK in 14ms (Views: 10.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 21:35:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:38 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:38 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2012-06-24 21:35:44 -0700
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 21:35:44 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 26ms (Views: 12.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 21:35:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:44 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:44 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/4fe7dd55d34a9cbae1000001" for 127.0.0.1 at 2012-06-24 21:35:47 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4fe7dd55d34a9cbae1000001"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 21:35:47 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Rendered shared/_navigation.html.erb (0.4ms)
+Completed 200 OK in 26ms (Views: 12.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:47 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 21:35:47 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:47 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-06-24 21:35:49 -0700
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-06-24 21:35:49 -0700
+
+
+Started GET "/auth/twitter/callback?oauth_token=fVw9RER0GmyjJBpUTwsuNmVMgTyzNDJAC4e94zu7c4&oauth_verifier=ojHVAFr1BHyfulUgruT8pyC9cLOhF1GYpRrKmXZJg" for 127.0.0.1 at 2012-06-24 21:35:50 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"fVw9RER0GmyjJBpUTwsuNmVMgTyzNDJAC4e94zu7c4", "oauth_verifier"=>"ojHVAFr1BHyfulUgruT8pyC9cLOhF1GYpRrKmXZJg", "provider"=>"twitter"}
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({:provider=>"twitter", :uid=>"552159647"}).limit(-1).sort([[:_id, :asc]])
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-24 21:35:51 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.7ms)
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+Rendered shared/_navigation.html.erb (1.4ms)
+Completed 200 OK in 29ms (Views: 14.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 21:35:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:51 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:51 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/4fe7dd55d34a9cbae1000001" for 127.0.0.1 at 2012-06-24 21:35:53 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4fe7dd55d34a9cbae1000001"}
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+Rendered users/show.html.erb within layouts/application (0.1ms)
+Rendered shared/_navigation.html.erb (0.6ms)
+Completed 200 OK in 13ms (Views: 10.1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:53 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-24 21:35:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:53 -0700
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-24 21:35:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-25 17:01:14 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (71.4ms)
+Rendered shared/_navigation.html.erb (1.3ms)
+Completed 200 OK in 337ms (Views: 267.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:14 -0700
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:14 -0700
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:14 -0700
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:14 -0700
+Served asset /users.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-25 17:01:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-06-25 17:01:18 -0700
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-06-25 17:01:18 -0700
+
+
+Started GET "/auth/twitter/callback?oauth_token=Fhgi1fyUVwQVYKC4lU8uYR60wnoJ8aH60A1dwrGv6g&oauth_verifier=Yu5F34fE9HwGg38QNyTMKkzjmNBawuTT9Rl4daVk" for 127.0.0.1 at 2012-06-25 17:01:21 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"Fhgi1fyUVwQVYKC4lU8uYR60wnoJ8aH60A1dwrGv6g", "oauth_verifier"=>"Yu5F34fE9HwGg38QNyTMKkzjmNBawuTT9Rl4daVk", "provider"=>"twitter"}
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({:provider=>"twitter", :uid=>"552159647"}).limit(-1).sort([[:_id, :asc]])
+Redirected to http://localhost:3000/
+Completed 302 Found in 69ms
+
+
+Started GET "/users/4fe7dd55d34a9cbae1000001" for 127.0.0.1 at 2012-06-25 17:01:22 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4fe7dd55d34a9cbae1000001"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-25 17:01:22 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (3.0ms)
+Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 28ms (Views: 13.1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:22 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:23 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-25 17:01:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:23 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-06-25 17:01:25 -0700
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-06-25 17:01:25 -0700
+
+
+Started GET "/auth/twitter/callback?oauth_token=MZlMww7rI4OPhizjuiHfBWU0aZvdsMVwB7HxE8hjEw&oauth_verifier=bZcT8gz3rjxP5Q7Fe5JSuUhm0Pm3b2ujVx2N81dAM" for 127.0.0.1 at 2012-06-25 17:01:25 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"MZlMww7rI4OPhizjuiHfBWU0aZvdsMVwB7HxE8hjEw", "oauth_verifier"=>"bZcT8gz3rjxP5Q7Fe5JSuUhm0Pm3b2ujVx2N81dAM", "provider"=>"twitter"}
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({:provider=>"twitter", :uid=>"552159647"}).limit(-1).sort([[:_id, :asc]])
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-25 17:01:26 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.6ms)
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+Rendered shared/_navigation.html.erb (1.4ms)
+Completed 200 OK in 83ms (Views: 13.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:26 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:26 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:26 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-25 17:01:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2012-06-25 17:01:28 -0700
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-25 17:01:28 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 28ms (Views: 13.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:28 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:28 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:28 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-25 17:01:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/4fe7dd55d34a9cbae1000001" for 127.0.0.1 at 2012-06-25 17:01:31 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4fe7dd55d34a9cbae1000001"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-25 17:01:31 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.9ms)
+Rendered shared/_navigation.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 15.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:31 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:31 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:31 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:31 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-25 17:01:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-06-25 17:01:33 -0700
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-06-25 17:01:33 -0700
+
+
+Started GET "/auth/twitter/callback?oauth_token=ghyQWgoNGpDxtRhAnqaehT96cW7mp1Nunf5zYVlPzIA&oauth_verifier=EFfnBmRcJbcktUWpmOrN4NuKoh7QIr3aFRv6NUqYUY" for 127.0.0.1 at 2012-06-25 17:01:33 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"ghyQWgoNGpDxtRhAnqaehT96cW7mp1Nunf5zYVlPzIA", "oauth_verifier"=>"EFfnBmRcJbcktUWpmOrN4NuKoh7QIr3aFRv6NUqYUY", "provider"=>"twitter"}
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({:provider=>"twitter", :uid=>"552159647"}).limit(-1).sort([[:_id, :asc]])
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-25 17:01:34 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.8ms)
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+Rendered shared/_navigation.html.erb (1.6ms)
+Completed 200 OK in 28ms (Views: 13.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-25 17:01:34 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:34 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:34 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:34 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/4fe7dd55d34a9cbae1000001" for 127.0.0.1 at 2012-06-25 17:01:36 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4fe7dd55d34a9cbae1000001"}
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) ghostwriter_development['users'].find({:_id=>BSON::ObjectId('4fe7dd55d34a9cbae1000001')}).limit(-1).sort([[:_id, :asc]])
+Rendered users/show.html.erb within layouts/application (0.6ms)
+Rendered shared/_navigation.html.erb (0.7ms)
+Completed 200 OK in 30ms (Views: 26.9ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:36 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:36 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:36 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:36 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:36 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-25 17:01:36 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2012-06-25 17:01:38 -0700
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-25 17:01:38 -0700
+  Processing by HomeController#index as HTML
+MONGODB (0ms) ghostwriter_development['system.namespaces'].find({})
+MONGODB (0ms) ghostwriter_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (3.4ms)
+Rendered shared/_navigation.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 14.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-25 17:01:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:38 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:38 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:38 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-25 17:01:38 -0700
+Served asset /application.js - 304 Not Modified (0ms)
