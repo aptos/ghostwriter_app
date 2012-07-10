@@ -6,4 +6,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui-1.8.13.custom.min.js
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require jquery.dataTables.min.js
+//= require fullcalendar.min.js
+//= require common.js
+//= require backbone/ghostwriter
 //= require_tree .

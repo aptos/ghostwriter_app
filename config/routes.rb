@@ -1,5 +1,7 @@
 Ghostwriter::Application.routes.draw do
 
+  resources :yodas
+
     resources :users, :only => :show
     root :to => 'home#index'
 

@@ -1,0 +1,57 @@
+# Same config for all environments, development, test, production
+
+jobs: 
+  none: 'Pick One'
+  harvest: 'Harvest'
+  leaf_pulling: 'Leaf Pulling'
+  maintenance: 'Maintenance'
+  pruning: 'Pruning'
+  spray: 'Spray'
+  thinning: 'Thinning'
+  weeds: 'Weeds'
+
+colors: 
+  none: '#CCCCCC'
+  harvest: '#DDA0DD'
+  leaf_pulling: '#FFA500'
+  pruning: '#6A5ACD'
+  spray: '#191970'
+  thinning: '#32CD32'
+  weeds: '#D2691E'
+
+locations: 
+  none: 'Pick One'
+  amaya_pinot: 'Amaya Pinot'
+  wilk: 'Wilkerson'
+  wdrf_pinot: 'Woodruff Pinot'
+  wdrf_north: 'Woodruff North Block'
+  wdrf_terraces: 'Woodruff Terraces'
+
+rates: 
+  supervisor: 15
+  worker: 12
+
+expense_columns:
+  - id
+  - Date
+  - Vendor
+  - Category
+  - Description
+  - Account
+  - Amount
+
+categories:
+  miscellaneous: Miscellaneous
+  deposit: Deposit
+  farming_equipment: 'Farming Equipment'
+  fuel: Fuel
+  fungicides: Fungicides
+  labor: Labor
+  netting: Netting
+  nutrients: Nutrients
+  production_equipment: 'Production Equipment'
+
+accounts:
+  brian: Brian
+  kenny: Kenny
+  ghostwriter: Ghostwriter

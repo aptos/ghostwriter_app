@@ -1,4 +1,135 @@
 <h3>Home</h3>
 <% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
+    <p>User: <%=link_to user.name, user %></p>
 <% end %>
+
+        <!-- Templates -->
+    <script type="text/template" id="timecardFormTemplate">
+      <div>
+        <div id='title'></div>
+      </div>
+      <span id='start'/>
+      <div>
+        <label>Location:</label>
+        <select name='location' class="field" type="select">
+          <% ApplicationSettings.config['locations'].each do |key, value|%>
+          <option value='<%= key %>'><%= value %></option>
+          <% end %>
+        </select>
+      </div>
+      <div>
+        <label>Job:</label>
+        <select name='job' class="field" type="select">
+          <% ApplicationSettings.config['jobs'].each do |key, value| %>
+          <option value='<%= key %>'><%= value %></option>
+          <% end %>
+        </select>
+      </div>
+      <h3>Hours:</h3>
+      <table>
+        <tr>
+          <td><label>Supervisor:</label></td>
+          <td><input name='supervisor_hours' class="field" type="text" /></td>
+        </tr>
+        <tr>
+          <td><label>Worker:</label></td>
+          <td><input name='worker_hours' class="field" type="text" /></td>
+        </tr>
+        <tr>
+          <td><label>Worker Count:</label></td>
+          <td><input name='worker_count' class="field" type="text" /></td>
+        </tr>
+      </table>
+      <h3>Payment:</h3>
+      <table>
+        <tr>
+          <td><input name='payment' class="field" type="text" /></td>
+        </tr>
+        <tr>
+          <td><input name='paid' type="checkbox" />
+            <span>(paid)</span>
+          </td>
+        </tr>
+      </table>
+    </script>
+
+    <script type="text/template" id="expenseTableTemplate">
+      <thead>
+        <tr>
+          <% ApplicationSettings.config['expense_columns'].each do |value| %>
+          <th><%= value %></th>
+          <% end %>
+        </tr>
+      </thead>
+    </script>
+
+    <script type="text/template" id="expenseFormTemplate">
+      <div>
+        <div id='title'></div>
+      </div>
+      <label>Date:</label>
+      <input id="datepicker" name='date' class="field" type="text" />
+      <div class="expense">
+        <label>Vendor:</label>
+        <input id="vendor" name='vendor' class="field" type="text" />
+        <label>Description:</label>
+        <input name='description' class="field" type="text" />
+      </div>
+      <div>
+        <div>
+          <label>Category:</label>
+          <select name='category' class="field" type="select">
+            <% ApplicationSettings.config['categories'].each do |key, value| %>
+            <option value='<%= key %>'><%= value %></option>
+            <% end %>
+          </select>
+        </div>
+        <label>Account:</label>
+        <select name='account' class="field" type="select">
+          <% ApplicationSettings.config['accounts'].each do |key, value| %>
+          <option value='<%= key %>'><%= value %></option>
+          <% end %>
+        </select>
+      </div>
+      <label>Amount:</label>
+      <input name='amount' class="field" type="text" />
+    </script>
+
+    <!--   end of Templates  -->
+    
+<div id="tabs">
+    <ul>
+        <li><a href="#timecardsTab">timecards</a></li>
+        <li><a href="#expensesTab">Expenses</a></li>
+    </ul>
+    <div id="timecardsTab">
+        <span>Unpaid Timecards: $</span>
+        <span id="unpaid_total"></span>
+        <div id='timecards'>
+            <div id='timecardDialog' class='dialog ui-helper-hidden'>
+                <form id='timecard'>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="expensesTab">
+        <div id='expenses'>
+            <button id="add-expense"><span class="add-expense">+ Expense</span></button>
+            <button id="add-deposit">+ Deposit</button>
+            <button id="add-paycheck">+ Paycheck</button>
+            <div class="balance">
+                <span>Total Expenses: $</span>
+                <span id="expenses_total"></span>
+                <span>Total Deposits $</span>
+                <span id="deposits_total"></span>
+            </div>
+            <table id='expenseTable' width="100%">
+            </table>
+            <div id='expenseDialog' class='dialog ui-helper-hidden'>
+                <form id='expense'>
+                </form>
+                <table id="unpaidTimecards"></table>
+            </div>
+        </div>
+    </div>
+</div>

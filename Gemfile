@@ -13,6 +13,8 @@ gem "bootstrap-sass", ">= 2.0.3"
 gem "simple_form"
 gem "will_paginate_mongoid"
 
+gem "rails-backbone"
+
 ## Gems used only for assets and not required
 ## in production environments by default.
 group :assets do

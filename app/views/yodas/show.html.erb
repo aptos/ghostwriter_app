@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @yoda.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @yoda.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_yoda_path(@yoda) %> |
+<%= link_to 'Back', yodas_path %>
