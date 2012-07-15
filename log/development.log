@@ -1748,3 +1748,26 @@ MONGODB (0ms) development['system.namespaces'].find({})
 MONGODB (0ms) development['expenses'].find({:_id=>BSON::ObjectId('5002511ed34a9c3d32000004')}).limit(-1).sort([[:_id, :asc]])
 MONGODB (0ms) development['expenses'].remove({:_id=>BSON::ObjectId('5002511ed34a9c3d32000004')})
 Completed 200 OK in 5ms (Views: 2.8ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/preferences" for 127.0.0.1 at 2012-07-14 22:28:56 -0700
+  Processing by PreferencesController#index as JSON
+Completed 200 OK in 4ms (Views: 3.4ms)
+
+
+Started GET "/timecards?_=1342330136583" for 127.0.0.1 at 2012-07-14 22:28:56 -0700
+  Processing by TimecardsController#index as JSON
+  Parameters: {"_"=>"1342330136583"}
+MONGODB (0ms) development['system.namespaces'].find({})
+MONGODB (0ms) development['timecards'].find({})
+Completed 200 OK in 8ms (Views: 7.2ms)
+
+
+Started GET "/expenses?_=1342330136597" for 127.0.0.1 at 2012-07-14 22:28:56 -0700
+  Processing by ExpensesController#index as JSON
+  Parameters: {"_"=>"1342330136597"}
+MONGODB (0ms) development['system.namespaces'].find({})
+MONGODB (0ms) development['expenses'].find({})
+Completed 200 OK in 8ms (Views: 7.5ms)

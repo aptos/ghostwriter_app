@@ -11,3 +11,5 @@ gem "will_paginate_mongoid"
 gem 'rails-backbone'
 
 gem 'jquery-rails'
+
+gem 'thin'
