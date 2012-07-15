@@ -3,16 +3,3 @@
 // be included in the compiled file accessible from http://example.com/assets/application.js
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
-//
-//= require jquery
-//= require jquery_ujs
-//= require jquery-ui-1.8.13.custom.min.js
-//= require underscore
-//= require backbone
-//= require backbone_rails_sync
-//= require backbone_datalink
-//= require jquery.dataTables.min.js
-//= require fullcalendar.min.js
-//= require common.js
-//= require backbone/ghostwriter
-//= require_tree .

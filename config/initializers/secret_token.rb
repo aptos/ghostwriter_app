@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Ghostwriter::Application.config.secret_token = '31abdfd19b73cbb690343f9c914bf8e15e948745e2859c48a5e1caca78cc58a0711d006e56ced7088a21efc7fc830609731e3134bd821d96ebc666aa85987f15'
+BackboneJsAndFullCalendar::Application.config.secret_token = '75d25ec96223a62b2271a80b4739d5677759670ff5453128dd7bf6c47c18b4193fc69978856d36e9bd4ed87a8d2b832502a09f35919d2f8af533682608608a7b'
