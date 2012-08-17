@@ -91,9 +91,9 @@ $(function () {
           }
         }
       });
-      expenses = expenses.formatMoney();
+      expenses = formatMoney(expenses);
       $('#expenses_total').text(expenses);
-      deposits = deposits.formatMoney();
+      deposits = formatMoney(deposits);
       $('#deposits_total').text(deposits);
     },
     select: function(e){

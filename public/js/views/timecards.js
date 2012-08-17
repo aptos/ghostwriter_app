@@ -100,7 +100,7 @@ $(function () {
           unpaid = unpaid + model.attributes.payment;
         }
       });
-      unpaid = unpaid.formatMoney();
+      unpaid = formatMoney(unpaid);
       $('#unpaid_total').text(unpaid);
     },
     payTimecards: function(id_list){

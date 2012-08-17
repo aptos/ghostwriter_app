@@ -4,8 +4,8 @@ class Timecard
   field :supervisor_hours, :type => Integer
   field :worker_hours, :type => Integer
   field :worker_count, :type => Integer
-  field :payment, :type => String
-  field :paid, :type => String
+  field :payment, :type => Float, :precision => 8, :scale => 2
+  field :paid, :type => Boolean
   field :location, :type => String
   field :job, :type => String
   field :start, :type => String

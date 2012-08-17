@@ -11,11 +11,11 @@ $(function(){
     'js/vendor/jquery-ui-1.8.13.custom.min.js',
     'js/vendor/fullcalendar.min.js',
     'js/vendor/jquery.dataTables.min.js',
+    'js/common.js',
     'js/views/expense.js',
     'js/views/expenses.js',
     'js/views/timecard.js',
-    'js/views/timecards.js',
-    'js/common.js'
+    'js/views/timecards.js'
     ];
 
     App.get_script = function(scripts, cb){
